@@ -44,6 +44,7 @@ console.log('#page-banner has child nodes:', banner.hasChildNodes);
 const cloneBanner = banner.cloneNode(true);
 console.log(cloneBanner);*/
 
+
 //Traversing the DOM 
 /*const bookList = document.querySelector('#book-list');
 console.log('the parent Node is:', bookList.parentNode);
