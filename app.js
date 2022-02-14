@@ -156,7 +156,7 @@ hideBox.addEventListener('change',function(e){
 });*/
 
 //Custom Search Filter
-const list = document.querySelector('#book-list ul');
+/*const list = document.querySelector('#book-list ul');
 const searchBar = document.forms['search-books'].querySelector('input');
 searchBar.addEventListener('keyup',function(e){
     const term = e.target.value.toLowerCase();
@@ -169,4 +169,21 @@ searchBar.addEventListener('keyup',function(e){
             book.style.display = 'none';
         }
     })
-});
+});*/
+
+//Tabbed Content
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
+tabs.addEventListener('click', function(e){
+    if(e.target.tagName == "LI"){
+        const targetPanel = document.querySelector(e.target.dataset.target);
+        panels.forEach(function(panel){
+            if(panel == targetPanel){
+                panel.classList.add('active');
+            }else {
+                panel.classList.remove('active');
+            }
+        });
+    }
+})
+
