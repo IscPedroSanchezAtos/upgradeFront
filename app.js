@@ -52,5 +52,12 @@ console.log('the parent Element is:', bookList.parentElement.parentElement);
 
 console.log(bookList.children);*/
 
+// traveling sibling elemets
+const bookList = document.querySelector('#book-list');
+console.log('book-list next sibling is:', bookList.nextSibling);
+console.log('book-list next sibling element is:', bookList.nextElementSibling);
 
+console.log('book-list previous sibling is:', bookList.previousSibling);
+console.log('book-list previous sibling element is:', bookList.previousElementSibling);
 
+bookList.previousElementSibling.querySelector('p').innerHTML += '<br/>Too cool for everyone else';
