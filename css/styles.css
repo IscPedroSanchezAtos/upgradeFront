@@ -54,12 +54,32 @@ body {
     line-height: 1.6em;
   }
 
+  #main {
+    float: right;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  #sidebar {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+    letter-spacing: .2em;
+    word-spacing: 1em;
+  }
 
-h1 {
-    color:blue;    
-}
+  #mainFooter {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
 
-p {
+
+/*p {
     border-top: 5px solid blue;
   border-right: 2px dotted green;
   border-bottom: 5px dashed red;
@@ -73,4 +93,4 @@ p {
   padding: 10px 20px;
   padding: 20px;
   margin-top: 40px;
-} 
+} */
