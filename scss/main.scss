@@ -4,12 +4,20 @@
 @function weight($weight-name){
    @return map-get($font-weights, $weight-name);
 }
+
+@mixin flexCenter ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
 body {
     background: $primary-color;
     color: $text-color;    
 }
 
 .main {
+    @include flexCenter(row);
     width: 80%;
     margin: 0 auto;
     #{&}_paragraph { //& iquals the parent .main_paragraph #{&} interpolation
