@@ -36,8 +36,12 @@ body {
   color: pink;
 }
 
-.light {
-  background: lighten #272727, 100%;
-  color: darken #fff, 100%;
+@media (max-width: 800px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
