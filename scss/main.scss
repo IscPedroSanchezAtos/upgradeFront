@@ -10,6 +10,18 @@ $font-weights: (
 
 body {
     background: $primary-color;
-    color: $text-color;
-    font-weight: map-get($font-weights , bold );
+    color: $text-color;    
 }
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    #{&}_paragraph { //& iquals the parent .main_paragraph
+        font-weight: map-get($font-weights , bold );
+
+        &:hover {
+            color:pink;
+        }
+    }
+}
+
