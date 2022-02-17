@@ -26,7 +26,7 @@
 }
 
 .home__name--last {
-  color: #ff652f;
+  color: #2cd0ec;
   font-weight: 700;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #2cd0ec;
 }
 
 .nav .menu-nav__link {
@@ -162,7 +162,7 @@
 }
 
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: #2cd0ec;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -236,7 +236,7 @@
 .about .jobs__job {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #2cd0ec;
 }
 
 .about .jobs__job h2, .about .jobs__job h3 {
@@ -304,7 +304,7 @@
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #2cd0ec;
   overflow: hidden;
   cursor: pointer;
 }
@@ -320,7 +320,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ff652f;
+  background: #2cd0ec;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -415,6 +415,64 @@
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects__bio-image {
+    height: 50vh;
+  }
+}
+
 body {
   background: #272727;
   color: #fff;
@@ -433,7 +491,7 @@ a {
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #2cd0ec;
 }
 
 header {
@@ -461,7 +519,7 @@ main .social-icons a {
 }
 
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #2cd0ec;
 }
 
 footer {
