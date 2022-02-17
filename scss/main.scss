@@ -32,7 +32,7 @@ body {
 
 .main {
     @include flexCenter(row);
-    width: 80%;
+    width: 80% - 40%; // math operations
     margin: 0 auto;
     #{&}_paragraph1 { //& iquals the parent .main_paragraph #{&} interpolation
         font-weight: weight( bold );
