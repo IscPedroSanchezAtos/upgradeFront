@@ -1,0 +1,35 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#book-list, #add-book, #tabbed-content{
+    margin: 30px;
+}
+
+#book-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#book-list li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+}
+
+#book-list li:hover{
+    border-color: #9361bf;
+}
+
+.delete{
+    float: right;
+    background: #9361bf;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
