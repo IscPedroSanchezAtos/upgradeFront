@@ -34,15 +34,24 @@ body {
     @include flexCenter(row);
     width: 80%;
     margin: 0 auto;
-    #{&}_paragraph { //& iquals the parent .main_paragraph #{&} interpolation
+    #{&}_paragraph1 { //& iquals the parent .main_paragraph #{&} interpolation
         font-weight: weight( bold );
 
         &:hover {
             color:pink;
         }
     }
+
+    #{&}_paragraph2 { //& iquals the parent .main_paragraph #{&} interpolation
+        @extend .main_paragraph1;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
     @include mobile{
-        flex-direction: column;
+        flex-direction: column;      
+        
     }
 }
 
