@@ -19,9 +19,30 @@ let person: Person= {
   
 };
 
-let lotsOfPeople: Person[];*/
+let lotsOfPeople: Person[];
 
-let personName: unknown;
+let personName: unknown;*/
+
+interface Person {
+  name: string;
+  age?: number;
+};
+
+type X = {
+  a: string;
+  b: number;
+};
+
+type Y = {
+  c: string;
+  d: number;
+};
+
+let y: Y = {
+  c: "dfgdf",
+  d: 54,
+};
+
 function App() {
   return (
     <div className="App">
