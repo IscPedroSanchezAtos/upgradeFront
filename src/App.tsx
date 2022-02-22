@@ -1,45 +1,16 @@
 import React from 'react';
 import './App.css';
-
-let name: string;
-let age: number | string;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string];
-
-let printName:(name: string) => never;
-
-/*type Person = {
-  name: string;
-  age?: number;
-}
-
-let person: Person= {
-  name: "Pedro",
-  
-};
-
-let lotsOfPeople: Person[];
-
-let personName: unknown;*/
-
-type X = {
-  a: string;
-  b: number;
-};
-
-interface Person extends X{
-  name: string;
-  age?: number;
-};
+import InputFeild from './components/InputFeild';
 
 
-function App() {
+const App: React.FC = () =>{
   return (
-    <div className="App">
-     Hello
-    </div>
+  <div className="App">
+    <span className="heading">Taskify</span>
+    <InputFeild />
+  </div>
   );
-}
+};
+  
 
 export default App;
