@@ -17,6 +17,8 @@ let person: Person= {
   
 };
 
+let lotsOfPeople: Person[];
+
 function App() {
   return (
     <div className="App">
