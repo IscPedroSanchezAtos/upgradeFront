@@ -2,12 +2,14 @@ import React from 'react';
 import './App.css';
 
 let name: string;
-let age: number;
+let age: number | string;
 let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
-type Person = {
+let printName:(name: string) => never;
+
+/*type Person = {
   name: string;
   age?: number;
 }
@@ -17,8 +19,9 @@ let person: Person= {
   
 };
 
-let lotsOfPeople: Person[];
+let lotsOfPeople: Person[];*/
 
+let personName: unknown;
 function App() {
   return (
     <div className="App">
